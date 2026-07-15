@@ -128,21 +128,86 @@
 # print(rev)  
 
 
-n=1234
-num=n
-rev=0
-while(n>0):
-    rem=n%10
-    rev=rev*10+rem
-    n=n//10
-if(rev==num):
-    print("palindrome")
-else:
-    print("no")
+# n=1234
+# num=n
+# rev=0
+# while(n>0):
+#     rem=n%10
+#     rev=rev*10+rem
+#     n=n//10
+# if(rev==num):
+#     print("palindrome")
+# else:
+#     print("no")
 
-git init
-git add .
-git commit -m "Initial commit"
-git branch -M main
-git remote add origin https://github.com/USERNAME/REPOSITORY.git
-git push -u origin main
+
+# n=153
+# original=n
+# arm=0
+# while(n>0):
+#     rem=n%10
+#     arm=arm+rem*rem*rem
+#     n=n//10
+# if(arm==original):
+#     print("Armstrong num")
+# else:
+#     print("no")
+
+
+# x=int(input())
+# if(x>5) and (x%5==0):
+#     print(x//5)
+# elif(x>5):
+#     print(x//5+1)
+# else:
+#     print("1")
+
+# x=int(input())
+# count=0
+# while(x>0):
+#     rem=x%10
+#     count+=1
+#     x=x//10
+# print(count)
+
+# x=int(input())
+# if(x<10):
+#     print(x)
+# sum=0
+# sumsum=0
+# while(x!=0):
+#     rem=x%10
+#     sum+=rem
+#     x=x//10
+# if sum<10:
+#     print(sum)
+# else:
+#     while(sum!=0):
+#         rem=sum%10
+#         sumsum+=rem
+#         sum=sum//10
+# print(sumsum)
+
+# n=int(input())
+# a=0
+# b=1
+# for i in range(n):
+#     print(a)
+#     c=a+b
+#     a=b
+#     b=c
+
+n=int(input())
+if n<10:
+    print(n)
+else:
+    sum=0
+    while(n!=0):
+        rem=n%10
+        sum+=rem
+        n=n//10
+    n=sum
+print(n)
+
+
+
