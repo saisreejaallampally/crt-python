@@ -109,33 +109,94 @@
 #     print(0)
 
 
-# n=int(input())
-# bin=""
-# while(n!=0):
-#     rem=n%2
-#     bin=str(rem)+bin
-#     n=n//2
-# print(bin)
-
-
-# n=int(input())
-# hex=""
-# while(n!=0):
-#     rem=n%16
-#     if n<10:
-#         dec=str(rem)+hex
+# n = int(input())
+# x = 0
+# for i in range(n):
+#     s = input()
+#     if '+' in s:
+#         x += 1
 #     else:
-#         hex=chr(rem+55)+hex
-#     n=n//16
-# print(hex)
+#         x -= 1
+# print(x)
 
 
-n = int(input())
-x = 0
-for i in range(n):
-    s = input()
-    if '+' in s:
-        x += 1
+decimal=int(input())
+bin=""
+while(n!=0):
+    rem=n%2
+    bin=str(rem)+bin
+    n=n//2
+print(bin)
+
+
+decimal=int(input())
+hex=""
+while(n!=0):
+    rem=n%16
+    if n<10:
+        dec=str(rem)+hex
     else:
-        x -= 1
-print(x)
+        hex=chr(rem+55)+hex
+    n=n//16
+print(hex) 
+
+
+decimal=int(input())
+oct=""
+while(n!=0):
+    rem=n%8
+    oct=str(rem)+oct
+    n=n//8
+print(oct)
+    
+
+binary=int(input())
+decimal=0
+power=0
+while(binary!=0):
+    rem=binary%10
+    decimal=decimal+rem*(2**power)
+    power+=1
+    binary=binary//10
+print(decimal)
+
+
+binary=int(input())
+octal = ""
+while n != 0:
+    rem = n % 8
+    octal = str(rem) + octal
+    n = n // 8
+print(octal)
+
+
+# binary=int(input())
+# hexa = ""
+# while n != 0:
+#     rem = n % 16
+#     if rem < 10:
+#         hexa = str(rem) + hexa
+#     else:
+#         hexa = chr(rem + 55) + hexa
+#     n = n // 16
+# print(hexa)
+
+
+binary = int(input())
+
+decimal = 0
+power = 0
+while binary != 0:
+    rem = binary % 10
+    decimal += rem * (2 ** power)
+    power += 1
+    binary //= 10
+
+octal = ""
+
+while decimal != 0:
+    rem = decimal % 8
+    octal = str(rem) + octal
+    decimal //= 8
+
+print(octal)
