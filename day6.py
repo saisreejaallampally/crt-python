@@ -135,13 +135,88 @@
 # primerange(n)
 
 
-def primerange(n):
-    for i in range(2,n+1):
-        count=0
-        for j in range(1,i+1):
-            if i%j==0:
-                count+=1
-        if count==2:
-            print(i)
-n=int(input())
-primerange(n)               
+# def primerange(n):
+#     for i in range(2,n+1):
+#         count=0
+#         for j in range(1,i+1):
+#             if i%j==0:
+#                 count+=1
+#         if count==2:
+#             print(i)
+# n=int(input())
+# primerange(n)               
+
+
+# def perfectnum(n):
+#     sum=0
+#     for i in range(1,n):
+#         if n%i==0:
+#             sum+=i
+#     if sum==n:
+#         return "perfect"
+#     else:
+#         return "not"
+# n=int(input())
+# print(perfectnum(n)) 
+
+
+# def reverse(n):
+#     rev=0
+#     while(n!=0):
+#        rem=n%10
+#        rev=rev*10+rem
+#        n=n//10
+#     return rev
+# n=int(input())
+# print(reverse(n))
+
+
+# def countofnum(n):
+#     count=0
+#     while(n!=0):
+#         rem=n%10
+#         count+=1
+#         n=n//10
+#     return count
+# n=int(input())
+# print(countofnum(n))
+
+
+# def palindrome(n):
+#     num=n
+#     rev=0
+#     while(n!=0):
+#         rem=n%10
+#         rev=rev*10+rem
+#         n=n//10
+#     if rev==num:
+#         return "palindrome"
+#     else:
+#         return "not"
+# n=int(input())
+# print(palindrome(n))
+
+
+# def strong(n):
+#     num=n
+#     sum=0
+#     while(n!=0):
+#         rem=n%10
+#         fact=1
+#         for i in range(1,rem+1):
+#             fact*=i
+#         sum+=fact
+#         n=n//10
+#     if sum==num:
+#         return "strong"
+#     else:
+#         return "not"
+# n=int(input())
+# print(strong(n))
+
+
+# def reverse(n):
+#     print(str(n)[::-1])
+# reverse(1234)
+
+
